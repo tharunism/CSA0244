@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],n,EC,OC,i;
+	printf("enter the size of the array number");
+	scanf("%d",&n);
+	printf("enter the values of the array elements");
+	for(int i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	
+	EC=0;
+	OC=0;
+    
+    for(i=0;i<n;i++)
+    {
+    	if(a[i]%2==0)
+    	EC++;
+    	else
+    	OC++;
+	}
+		
+	printf("\n the odd count=%d",OC);
+		printf("\n the even count=%d",EC);
+	return 0;
+}

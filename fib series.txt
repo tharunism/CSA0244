@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int n,a=0,b=1,temp,i;
+	printf("enter the number\n");
+	scanf("%d",&n);
+	printf("enter the number of %d terms\n",n);
+	for(i=0;i<n;i++)
+	{
+		if(i<=1)
+		temp=i;
+		else
+		{
+		temp=a+b;
+		a=b;
+		b=temp;
+	    }
+		printf("%d ",temp);
+		
+	}
+	return 0;
+}
